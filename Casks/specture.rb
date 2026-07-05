@@ -1,8 +1,8 @@
 cask "specture" do
   version "0.1.0"
-  sha256 "64b4da8e073cde5080d999cdc6c954815dcfc02524c4ef73bd6f97a2f41932af"
+  sha256 "69375b7a4f855f403bcef9078f50a68ae36bf919d9793455f60a8a54364e1864"
 
-  url "https://github.com/azeveco/specture/releases/download/v#{version}/Specture_#{version}_universal.dmg"
+  url "https://github.com/azeveco/specture/releases/download/v#{version}/Specture_#{version}_aarch64.dmg"
   name "Specture"
   desc "A fast, powerful, and beautiful cross-platform screenshot tool"
   homepage "https://github.com/azeveco/specture"
