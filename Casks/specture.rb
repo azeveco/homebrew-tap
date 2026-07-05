@@ -1,15 +1,14 @@
 cask "specture" do
   version "0.1.0"
-  sha256 "69375b7a4f855f403bcef9078f50a68ae36bf919d9793455f60a8a54364e1864"
+  sha256 "64b4da8e073cde5080d999cdc6c954815dcfc02524c4ef73bd6f97a2f41932af"
 
-  url "https://github.com/azeveco/specture/releases/download/v#{version}/Specture_#{version}_aarch64.dmg"
+  url "https://github.com/azeveco/specture/releases/download/v#{version}/Specture_#{version}_universal.dmg"
   name "Specture"
   desc "A fast, powerful, and beautiful cross-platform screenshot tool"
   homepage "https://github.com/azeveco/specture"
 
   app "Specture.app"
 
-  # Workaounr to remove app from security lock and sign it locally after installation
   postflight do
     system_command "xattr",
                    args: ["-cr", "#{appdir}/Specture.app"],
