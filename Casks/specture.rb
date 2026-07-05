@@ -1,6 +1,6 @@
 cask "specture" do
   version "0.1.0"
-  sha256 "9e796d7ea5e0f34bd114a258e36ae3145b2b06bb8520c93d6664b27d61fcc0b0"
+  sha256 "64b4da8e073cde5080d999cdc6c954815dcfc02524c4ef73bd6f97a2f41932af"
 
   url "https://github.com/azeveco/specture/releases/download/v#{version}/Specture_#{version}_universal.dmg"
   name "Specture"
