@@ -9,6 +9,16 @@ cask "specture" do
 
   app "Specture.app"
 
+  # Workaounr to remove app from security lock and sign it locally after installation
+  postflight do
+    system_command "xattr",
+                   args: ["-cr", "#{appdir}/Specture.app"],
+                   sudo: false
+    system_command "codesign",
+                   args: ["--force", "--deep", "-s", "-", "#{appdir}/Specture.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/Specture",
     "~/Library/Caches/com.azeveco.specture",
