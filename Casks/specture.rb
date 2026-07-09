@@ -1,6 +1,6 @@
 cask "specture" do
-  version "0.2.0"
-  sha256 "eae262db4ffa98db840a9a048b32ed55a7fb48c117142dfb4491f5dea29ebfce"
+  version "0.3.0"
+  sha256 "7977d9ca5103dc41561dea8c24db82864bb5b93cdc06e405d6c7e63d2d04f5e7"
 
   url "https://github.com/azeveco/specture/releases/download/v#{version}/Specture_#{version}_universal.dmg"
   name "Specture"
@@ -22,6 +22,7 @@ cask "specture" do
     "~/Library/Application Support/com.azeveco.specture",
     "~/Library/Caches/com.azeveco.specture",
     "~/Library/Preferences/com.azeveco.specture.plist",
+    "~/Library/Saved Application State/com.azeveco.specture.savedState",
     "~/Library/WebKit/com.azeveco.specture"
   ]
 end
